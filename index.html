@@ -26,11 +26,12 @@
           <span>
             <h2>Notifications</h2>
           </span>
-          <span id="numOfUnreadNotifications">3</span>
+          <span id="numOfUnreadNotifications">7</span>
         </div>
-        <div class="header-right">Mark all as read</div>
+        <div class="header-right" onclick="clearNotifications()">Mark all as read</div>
       </header>
-      <div class="message">
+
+      <div class="message" id="notification-1" onclick="readNotification(1)">
         <img src="assets/images/avatar-mark-webber.webp" alt="avatar-mark-webber">
         <div class="messageBox">
           <div class="messageContent">
@@ -39,18 +40,124 @@
             <span>reacted to your recent post</span>
             &nbsp&nbsp
             <span class="post">My first tournament today!</span>
-            <span id="message1" class="redDot"></span>
+            <span id="redDot-1" class="redDot"></span>
           </div>
           <div class="messageSentDuration">
             <span>1</span><span>m ago</span>
           </div>
         </div>
       </div>
+      <div class="message" id="notification-2" onclick="readNotification(2)">
+        <img src="assets/images/avatar-angela-gray.webp" alt="avatar-angela-gray">
+        <div class="messageBox">
+          <div class="messageContent">
+            <span id="AngelaGray" class="userName">Angela Gray</span>
+            &nbsp
+            <span>followed you</span>
+            &nbsp&nbsp
+            <span class="post"></span>
+            <span id="redDot-2" class="redDot"></span>
+          </div>
+          <div class="messageSentDuration">
+            <span>5</span><span>m ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="message" id="notification-3" onclick="readNotification(3)">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="avatar-jacob-thompson">
+        <div class="messageBox">
+          <div class="messageContent">
+            <span id="JacobThompson" class="userName">Jacob Thompson</span>
+            &nbsp
+            <span>has joined your group</span>
+            &nbsp&nbsp
+            <span class="post"></span>
+            <span class="group">Chess Club</span>
+            <span id="redDot-3" class="redDot"></span>
+          </div>
+          <div class="messageSentDuration">
+            <span>1</span><span>day ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="message" id="notification-4" onclick="readNotification(4)">
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-rizky-hasanuddin">
+        <div class="messageBox">
+          <div class="messageContent">
+            <span id="RizkyHasanuddin" class="userName">Rizky Hasanuddin</span>
+            &nbsp
+            <span>sent you a private message</span>
+            &nbsp&nbsp
+            <span class="post"></span>
+            <span id="redDot-4" class="redDot"></span>
+          </div>
+          <div class="messageSentDuration">
+            <span>5</span><span>days ago</span>
+          </div>
+          <div class="details">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.</div>
+        </div>
+      </div>
+      <div class="message" id="notification-5" onclick="readNotification(5)">
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith">
+        <div class="messageBox">
+          <div class="messageContent">
+            <span id="KimberlySmith" class="userName">Kimberly Smith</span>
+            &nbsp
+            <span>commented on your picture</span>
+            &nbsp&nbsp
+            <span class="post"></span>
+            <span id="redDot-5" class="redDot"></span>
+          </div>
+          <div class="messageSentDuration">
+            <span>1</span><span>week ago</span>
+          </div>
+        </div>
+        <div class="image-right">
+          <img src="assets/images/image-chess.webp" alt="image-chess">
+        </div>
+      </div>
+      <div class="message" id="notification-6" onclick="readNotification(6)">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="avatar-nathan-peterson">
+        <div class="messageBox">
+          <div class="messageContent">
+            <span id="NathanPeterson" class="userName">Nathan Peterson</span>
+            &nbsp
+            <span>reacted to your recent post</span>
+            &nbsp&nbsp
+            <span class="post">5 end-game strategies to increase your win rate</span>
+            <span id="redDot-6" class="redDot"></span>
+          </div>
+          <div class="messageSentDuration">
+            <span>2</span><span>weeks ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="message" id="notification-7" onclick="readNotification(7)">
+        <img src="assets/images/avatar-anna-kim.webp" alt="avatar-jacob-thompson">
+        <div class="messageBox">
+          <div class="messageContent">
+            <span id="AnnaKim" class="userName">Anna Kim</span>
+            &nbsp
+            <span>left the group</span>
+            &nbsp&nbsp
+            <span class="post"></span>
+            <span class="group">Chess Club</span>
+            <span id="redDot-7" class="redDot"></span>
+          </div>
+          <div class="messageSentDuration">
+            <span>1</span><span>day ago</span>
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">PieApplePie</a>.
     </div>
   </main>
+
+  <script src="js.js"></script>
 </body>
 </html>
